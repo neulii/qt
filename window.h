@@ -3,6 +3,8 @@
 
 #include <QWidget>
 #include <QPushButton>
+#include <QLabel>
+#include <QTextEdit>
 
 class Window : public QWidget
 {
@@ -15,6 +17,9 @@ class Window : public QWidget
 		void handleButton();
 	private:
 		QPushButton *m_button;
+		QLabel *myTextLabel;
+		QTextEdit *myEditor;
+
 	protected:
 	  void paintEvent(QPaintEvent *event);
 	
